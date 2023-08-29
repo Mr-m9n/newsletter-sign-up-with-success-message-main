@@ -5,6 +5,20 @@
   --btn-clr: hsl(231, 7%, 60%);
 }
 
+@font-face {
+  font-family: "roboto";
+  src: url(assets/fonts/Roboto-Bold.ttf);
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url(assets/fonts/Roboto-Regular.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +35,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
+  font-family: "roboto", sans-serif;
+  font-weight: normal;
 }
 
 .signUp {
@@ -53,6 +69,7 @@ body {
 
 .signUp--desc h1 {
   font-size: 4rem;
+  font-weight: bold;
 }
 
 .signUp--desc_info {
@@ -103,15 +120,12 @@ input {
 
 button {
   cursor: pointer;
+  font-weight: bold;
 }
 button:hover,
 button:active {
   box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.75);
   transition: box-shadow 0.5s linear;
-}
-
-#subscribe:hover,
-#dismiss:hover {
   background-image: linear-gradient(
     to right,
     hsl(4, 100%, 67%) 0%,
@@ -119,6 +133,10 @@ button:active {
   );
   transition: background-image 0.2s linear;
 }
+
+/* #subscribe:hover,
+#dismiss:hover {
+} */
 
 #subscribe {
   margin-top: 2rem;
@@ -151,6 +169,7 @@ button:active {
 .success h1 {
   font-size: 3.5rem;
   padding-right: 3rem;
+  font-weight: bold;
 }
 
 .success p {
@@ -207,6 +226,10 @@ button:active {
     margin: 27rem;
     padding: 5rem;
     border-radius: 2rem;
+  }
+
+  .successEmail {
+    font-weight: bold;
   }
 
   #dismiss {
